@@ -14,7 +14,7 @@ public class Student {
 
 	public void readStudentName() {
 		Scanner s2 = new Scanner(System.in);
-		System.out.println("Enter name of the student");
+		System.out.println("Enter name of the student ");
 		 Student_name = s2.nextLine();
 	}
 }

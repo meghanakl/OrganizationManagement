@@ -12,7 +12,7 @@ public class Program {
 
 		int NoOfStudent = readCountOfStudent();
 		for (int i = 0; i < NoOfStudent; i++) {
-			System.out.println("Enter the details of " + (i + 1) + "th Student ");
+			System.out.println("Enter the details of " + (i + 1) + "th Student");
 			Student st = new Student();
 
 			st.readStudentId();

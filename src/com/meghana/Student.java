@@ -12,7 +12,8 @@ package com.meghana;
 			Scanner s1 = new Scanner(System.in);
 		    System.out.println("Enter id of the student ");
 		    Student_id = s1.nextInt();
-			return Student_id;
+			
+		    return Student_id;
 		
 		}
 		    

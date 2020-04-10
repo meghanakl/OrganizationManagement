@@ -8,13 +8,13 @@ public class Student {
 
 	public void readStudentId() {
 		Scanner s1 = new Scanner(System.in);
-		System.out.println("Enter id of the student ");
+		System.out.println("Enter id of the student");
 		 Student_id = s1.nextInt();
 	}
 
 	public void readStudentName() {
 		Scanner s2 = new Scanner(System.in);
-		System.out.println("Enter name of the student ");
+		System.out.println("Enter name of the student");
 		 Student_name = s2.nextLine();
 	}
 }

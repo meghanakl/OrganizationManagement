@@ -3,33 +3,46 @@ package com.meghana;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayOfNumbers { 
+public class ArrayOfNumbers {
 
 	public static void main(String[] args) {
 
 		ArrayList<Number> numbers = new ArrayList<Number>();
-		numbers.add(10);
-		numbers.add(20);
-		numbers.add(30);
-		numbers.add(40);
-		numbers.add(50);
-				
-	int a=readIntergerKey();
-	if(numbers.contains(a))
-	{
-	  System.out.println("The number "+a+ " is present");	
-}
-	else
-	{
-		System.out.println("The number "+a+ " is not present");
+		int NoOfValues = readCountOfValuesFromUser();
+		
+		
+		for (int i = 0; i < NoOfValues; i++) {
+			
+		}
+
+		int b = readIntergerKey();
+
+		if (numbers.contains(b)) {
+			System.out.println("The number " + b + " is present");
+		} else {
+			System.out.println("The number " + b + " is not present");
+		}
+
 	}
-	
+
+	public static int readCountOfValuesFromUser() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter number of  values");
+		int Count = s.nextInt();
+		return Count;
+	}
+
+	public static void GiveCountOfValuesFromUser(ArrayList<Number> numbers) {
+		for(int i=0;i<NoOfValues;i++) {
+			
+		}
+
 	}
 
 	public static int readIntergerKey() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter the value");
-		int Array = s.nextInt();
-		return Array;
+		int a = s.nextInt();
+		return a;
 	}
 }

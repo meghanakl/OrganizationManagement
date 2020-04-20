@@ -1,5 +1,7 @@
+
 package com.meghana;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student {
@@ -17,4 +19,9 @@ public class Student {
 		System.out.println("Enter name of the student");
 		 Student_name = s2.nextLine();
 	}
+		
+	public ArrayList<Course> RegisteredCourses = new ArrayList<Course>();
+	
+
+	
 }

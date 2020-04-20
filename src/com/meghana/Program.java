@@ -1,3 +1,4 @@
+
 package com.meghana;
 
 import java.util.ArrayList;
@@ -7,21 +8,60 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
-
 		ArrayList<Student> Stdlist = new ArrayList<Student>();
+	    ArrayList<Course> RegisteredCourses = new ArrayList<Course>();			
+		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
+		
+		Course C1 = new Course();
+		C1.Course_id = 1;
+		C1.Course_name = "Java";
+		AvailableCourse.add(C1);
+
+		Course C2 = new Course();
+		C2.Course_id = 2;
+		C2.Course_name = "Selenium";
+		AvailableCourse.add(C2);
+
+		Course C3 = new Course();
+		C3.Course_id = 3;
+		C3.Course_name = "python";
+		AvailableCourse.add(C3);
 
 		int NoOfStudent = readCountOfStudent();
+
 		for (int i = 0; i < NoOfStudent; i++) {
-			System.out.println("Enter the details of " + (i + 1) + "th Student");
-
+			System.out.println("Enter the details of the student number " + (i + 1));
 			Student st = new Student();
-
 			st.readStudentId();
 			st.readStudentName();
 			Stdlist.add(st);
-			System.out.println("--------------------------");
+		
+			System.out.println("Available Courses are:");
+			for (int j = 0; j < AvailableCourse.size(); j++) {
+				Course C = AvailableCourse.get(j);
+				System.out.println("Course id is " + C.Course_id);
+				System.out.println("Course name is " + C.Course_name);
+			
+				
 		}
+			System.out.println("-------------------------"); 
+			  
+			Course cr=new Course();
+			   int RequiredCourse=cr.GetRequiredCourseFromUser();
+		
+				for (int z = 0; z < RequiredCourse; z++) {
+				Course crc = new Course();
+				crc.readCourseId();
+			     crc.readCourseName() ;	     			   
+			     RegisteredCourses.add(crc);
+			    
+				} 
+		}
+			System.out.println("-------------------------- ");
+		
+ 
 		detailsOftheStudents(Stdlist);
+	
 	}
 
 	public static int readCountOfStudent() {
@@ -31,14 +71,16 @@ public class Program {
 		return NoOfStudent;
 	}
 
+	
+	
+
 	public static void detailsOftheStudents(ArrayList<Student> Stdlist) {
 		for (int i = 0; i < Stdlist.size(); i++) {
 			Student s = Stdlist.get(i);
 			System.out.println("Student " + (i + 1) + " details are as below:");
 			System.out.println("Student id is " + s.Student_id);
-			System.out.println("Student name is " + s.Student_name);
-			System.out.println("--------------------- ");
+			System.out.println("Student name is " + s.Student_name)	;	
+			System.out.println("--------------------- ");}
 		}
 	}
 
-}

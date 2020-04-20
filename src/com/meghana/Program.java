@@ -9,9 +9,9 @@ public class Program {
 
 	public static void main(String[] args) {
 		ArrayList<Student> Stdlist = new ArrayList<Student>();
-	    ArrayList<Course> RegisteredCourses = new ArrayList<Course>();			
+		ArrayList<Course> RegisteredCourses = new ArrayList<Course>();
 		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
-		
+
 		Course C1 = new Course();
 		C1.Course_id = 1;
 		C1.Course_name = "Java";
@@ -35,33 +35,31 @@ public class Program {
 			st.readStudentId();
 			st.readStudentName();
 			Stdlist.add(st);
-		
+
 			System.out.println("Available Courses are:");
 			for (int j = 0; j < AvailableCourse.size(); j++) {
 				Course C = AvailableCourse.get(j);
 				System.out.println("Course id is " + C.Course_id);
 				System.out.println("Course name is " + C.Course_name);
-			
-				
-		}
-			System.out.println("-------------------------"); 
-			  
-			Course cr=new Course();
-			   int RequiredCourse=cr.GetRequiredCourseFromUser();
-		
-				for (int z = 0; z < RequiredCourse; z++) {
+
+			}
+			System.out.println("------------------------");
+
+			Course cr = new Course();
+			int RequiredCourse = cr.GetRequiredCourseFromUser();
+
+			for (int z = 0; z < RequiredCourse; z++) {
 				Course crc = new Course();
 				crc.readCourseId();
-			     crc.readCourseName() ;	     			   
-			     RegisteredCourses.add(crc);
-			    
-				} 
+				crc.readCourseName();
+				RegisteredCourses.add(crc);
+
+			}
 		}
-			System.out.println("-------------------------- ");
-		
- 
+		System.out.println("-------------------------- ");
+
 		detailsOftheStudents(Stdlist);
-	
+
 	}
 
 	public static int readCountOfStudent() {
@@ -71,16 +69,24 @@ public class Program {
 		return NoOfStudent;
 	}
 
-	
-	
-
 	public static void detailsOftheStudents(ArrayList<Student> Stdlist) {
 		for (int i = 0; i < Stdlist.size(); i++) {
 			Student s = Stdlist.get(i);
 			System.out.println("Student " + (i + 1) + " details are as below:");
 			System.out.println("Student id is " + s.Student_id);
-			System.out.println("Student name is " + s.Student_name)	;	
-			System.out.println("--------------------- ");}
+			System.out.println("Student name is " + s.Student_name);
+			System.out.println("--------------------- ");
 		}
 	}
 
+	public static void RegisterdCourses(ArrayList<Course> RegisteredCourses) {
+		{
+			for (int i = 0; i < RegisteredCourses.size(); i++) {
+				Course RC = RegisteredCourses.get(i);
+
+				System.out.println("Registerd Courses are" + RC);
+
+			}
+		}
+	}
+}

@@ -76,8 +76,8 @@ public class Program {
 	{
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter number of  students");
-		int NoOfStudent = s.nextInt();
-		return NoOfStudent;
+		int noOfStudent = s.nextInt();
+		return noOfStudent;
 	}
 
 	public static void DisplayStudentsDetails(ArrayList<Student> Stdlist) 

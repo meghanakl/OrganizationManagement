@@ -27,7 +27,7 @@ public class Program {
 		c3.Course_name = "python";
 		availableCourse.add(c3);
 
-		int noOfStudent = readCountOfStudent();
+		int noOfStudent = Student.readCountOfStudent();
 
 		for (int i = 0; i < noOfStudent; i++) 
 		{
@@ -68,35 +68,14 @@ public class Program {
 				}
 			}
 			
-			DisplayStudentsDetails(stdlist);
+			Student.DisplayStudentsDetails(stdlist);
 		}
 	}
-
-	public static int readCountOfStudent() 
-	{
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter number of  students");
-		int noOfStudent = s.nextInt();
-		return noOfStudent;
-	}
-
-	public static void DisplayStudentsDetails(ArrayList<Student> Stdlist) 
-	{
-		for (int i = 0; i < Stdlist.size(); i++) 
-		{
-			Student s = Stdlist.get(i);
-			System.out.println("Student " + (i + 1) + " details are as below:");
-			System.out.println("Student id is " + s.Student_id);
-			System.out.println("Student name is " + s.Student_name);
-			System.out.println("Student Registerd Courses are:");
-
-			for (Course crs : s.RegisteredCourses) 
-			{
-				System.out.println("CourseId " + crs.Course_id);
-				System.out.println("CourseName " + crs.Course_name);
-
-			}
-		}
-	}
-	
 }
+	
+
+	
+		
+	
+	
+

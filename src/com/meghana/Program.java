@@ -49,7 +49,7 @@ public class Program {
 				System.out.println("CourseId " + c.Course_id);
 				System.out.println("CourseName " + c.Course_name);
 			}
-			System.out.println("----------------------------");
+			System.out.println("--------------------------");
 
 			Course cr = new Course();
 			int CountOfCourse = cr.GetRequiredCourseFromUser();

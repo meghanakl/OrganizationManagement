@@ -29,7 +29,7 @@ public class Program {
 
 		int NoOfStudent = readCountOfStudent();
 
-		for (int i = 0; i < NoOfStudent; i++) {
+		for (int i = 0; i < NoOfStudent; i++) { 
 			System.out.println("Enter the details of the student number" + (i + 1));
 			Student st = new Student();
 			st.readStudentId();

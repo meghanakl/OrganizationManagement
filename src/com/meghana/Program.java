@@ -85,7 +85,7 @@ public class Program {
 		for (int i = 0; i < Stdlist.size(); i++) 
 		{
 			Student s = Stdlist.get(i);
-			System.out.println("Student " + (i + 1) + " details are as below:");
+			System.out.println("Student " + (i + 1) + " details are as below: ");
 			System.out.println("Student id is " + s.Student_id);
 			System.out.println("Student name is " + s.Student_name);
 			System.out.println("Student Registerd Courses are:");

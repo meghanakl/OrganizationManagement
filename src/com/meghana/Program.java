@@ -91,10 +91,10 @@ public class Program {
 			System.out.println("Student name is " + s.Student_name);
 			System.out.println("Student Registerd Courses are:");
 
-			for (Course c : s.RegisteredCourses) 
+			for (Course crs : s.RegisteredCourses) 
 			{
-				System.out.println("CourseId " + c.Course_id);
-				System.out.println("CourseName " + c.Course_name);
+				System.out.println("CourseId " + crs.Course_id);
+				System.out.println("CourseName " + crs.Course_name);
 
 			}
 		}

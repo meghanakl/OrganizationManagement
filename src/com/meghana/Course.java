@@ -7,11 +7,7 @@ public class Course {
 int Course_id;
 String Course_name;
 
-public void readCourseId() {
-	Scanner s = new Scanner(System.in);
-	System.out.println("Enter the Course_id");
-	Course_id= s.nextInt();
-	}
+
 
 public void readCourseName() {
 	Scanner s = new Scanner(System.in);

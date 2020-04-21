@@ -11,8 +11,7 @@ public class Program {
 	{
 		ArrayList<Student> Stdlist = new ArrayList<Student>();
 		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
-		ArrayList<Course> RegisteredCourses = new ArrayList<Course>();
-
+		
 		Course C1 = new Course();
 		C1.Course_id = 1;
 		C1.Course_name = "Java";

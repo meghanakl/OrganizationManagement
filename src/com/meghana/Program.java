@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		ArrayList<Student> Stdlist = new ArrayList<Student>();
 		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
 		ArrayList<Course> RegisteredCourses = new ArrayList<Course>();
@@ -29,7 +30,8 @@ public class Program {
 
 		int NoOfStudent = readCountOfStudent();
 
-		for (int i = 0; i < NoOfStudent; i++) {
+		for (int i = 0; i < NoOfStudent; i++) 
+		{
 			System.out.println("Enter the details of the student number" + (i + 1));
 			Student st = new Student();
 			st.readStudentId();
@@ -43,7 +45,8 @@ public class Program {
 			// System.out.println("Course id is " + C.Course_id);
 			// System.out.println("Course name is " + C.Course_name);
 
-			for (Course c : AvailableCourse) {
+			for (Course c : AvailableCourse) 
+			{
 				System.out.println("CourseId " + c.Course_id);
 				System.out.println("CourseName " + c.Course_name);
 			}
@@ -52,34 +55,33 @@ public class Program {
 			Course cr = new Course();
 			int CountOfCourse = cr.GetRequiredCourseFromUser();
 
-			for (int z = 0; z < CountOfCourse; z++) {
-
-				int CourseId = readCourseId();
+			for (int z = 0; z < CountOfCourse; z++) 
+			{
+				Course cs = new Course();
+				int courseId = cs.readCourseId();
 
 				for (Course c : AvailableCourse) 
 				{
-					if (c.Course_id == CourseId) 
+					if (c.Course_id == courseId) 
 					{
 						st.RegisteredCourses.add(c);
 					}
 				}
 			}
-
-			System.out.println("-------------------------- ");
-
-			detailsOftheStudents(Stdlist);
-
+			
+			DisplayStudentsDetails(Stdlist);
 		}
 	}
 
-	public static int readCountOfStudent() {
+	public static int readCountOfStudent() 
+	{
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter number of  students");
 		int NoOfStudent = s.nextInt();
 		return NoOfStudent;
 	}
 
-	public static void detailsOftheStudents(ArrayList<Student> Stdlist) 
+	public static void DisplayStudentsDetails(ArrayList<Student> Stdlist) 
 	{
 		for (int i = 0; i < Stdlist.size(); i++) 
 		{
@@ -89,20 +91,13 @@ public class Program {
 			System.out.println("Student name is " + s.Student_name);
 			System.out.println("Student Registerd Courses are:");
 
-			for (Course C : s.RegisteredCourses) 
+			for (Course c : s.RegisteredCourses) 
 			{
-				System.out.println("CourseId " + C.Course_id);
-				System.out.println("CourseName " + C.Course_name);
+				System.out.println("CourseId " + c.Course_id);
+				System.out.println("CourseName " + c.Course_name);
 
 			}
 		}
 	}
-
-	public static int readCourseId() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter the Course_id");
-		int c = s.nextInt();
-		return c;
-	}
-
+	
 }

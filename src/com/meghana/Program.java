@@ -12,20 +12,20 @@ public class Program {
 		ArrayList<Student> Stdlist = new ArrayList<Student>();
 		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
 		
-		Course C1 = new Course();
-		C1.Course_id = 1;
-		C1.Course_name = "Java";
-		AvailableCourse.add(C1);
+		Course c1 = new Course();
+		c1.Course_id = 1;
+		c1.Course_name = "Java";
+		AvailableCourse.add(c1);
 
-		Course C2 = new Course();
-		C2.Course_id = 2;
-		C2.Course_name = "Selenium";
-		AvailableCourse.add(C2);
+		Course c2 = new Course();
+		c2.Course_id = 2;
+		c2.Course_name = "Selenium";
+		AvailableCourse.add(c2);
 
-		Course C3 = new Course();
-		C3.Course_id = 3;
-		C3.Course_name = "python";
-		AvailableCourse.add(C3);
+		Course c3 = new Course();
+		c3.Course_id = 3;
+		c3.Course_name = "python";
+		AvailableCourse.add(c3);
 
 		int NoOfStudent = readCountOfStudent();
 

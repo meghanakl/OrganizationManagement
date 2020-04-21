@@ -9,34 +9,34 @@ public class Program {
 
 	public static void main(String[] args) 
 	{
-		ArrayList<Student> Stdlist = new ArrayList<Student>();
-		ArrayList<Course> AvailableCourse = new ArrayList<Course>();
+		ArrayList<Student> stdlist = new ArrayList<Student>();
+		ArrayList<Course> availableCourse = new ArrayList<Course>();
 		
 		Course c1 = new Course();
 		c1.Course_id = 1;
 		c1.Course_name = "Java";
-		AvailableCourse.add(c1);
+		availableCourse.add(c1);
 
 		Course c2 = new Course();
 		c2.Course_id = 2;
 		c2.Course_name = "Selenium";
-		AvailableCourse.add(c2);
+		availableCourse.add(c2);
 
 		Course c3 = new Course();
 		c3.Course_id = 3;
 		c3.Course_name = "python";
-		AvailableCourse.add(c3);
+		availableCourse.add(c3);
 
-		int NoOfStudent = readCountOfStudent();
+		int noOfStudent = readCountOfStudent();
 
-		for (int i = 0; i < NoOfStudent; i++) 
+		for (int i = 0; i < noOfStudent; i++) 
 		{
 			System.out.println("Enter the details of the student number" + (i + 1));
 			Student st = new Student();
 			st.readStudentId();
 			st.readStudentName();
 
-			Stdlist.add(st);
+			stdlist.add(st);
 
 			System.out.println("Available Courses are:");
 			// for (int j = 0; j < AvailableCourse.size(); j++) {
@@ -44,7 +44,7 @@ public class Program {
 			// System.out.println("Course id is " + C.Course_id);
 			// System.out.println("Course name is " + C.Course_name);
 
-			for (Course c : AvailableCourse) 
+			for (Course c : availableCourse) 
 			{
 				System.out.println("CourseId " + c.Course_id);
 				System.out.println("CourseName " + c.Course_name);
@@ -59,7 +59,7 @@ public class Program {
 				Course cs = new Course();
 				int courseId = cs.readCourseId();
 
-				for (Course c : AvailableCourse) 
+				for (Course c : availableCourse) 
 				{
 					if (c.Course_id == courseId) 
 					{
@@ -68,7 +68,7 @@ public class Program {
 				}
 			}
 			
-			DisplayStudentsDetails(Stdlist);
+			DisplayStudentsDetails(stdlist);
 		}
 	}
 

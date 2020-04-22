@@ -8,3 +8,4 @@ public class Helper extends CollegeStaff
 	double Helper_Salary;
 	
 }
+ 

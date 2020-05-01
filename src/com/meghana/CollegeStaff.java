@@ -2,7 +2,7 @@ package com.meghana;
 
 import java.util.Scanner;
 
-public class CollegeStaff {
+public abstract class CollegeStaff {
 
 	int Staff_id;
 	String Staff_Name;
@@ -18,7 +18,13 @@ public class CollegeStaff {
 		 Staff_Salary=(Staff_Salary)+(Staff_Salary)*(0.1);
 		 return Staff_Salary;
 	}
+	
+	public abstract int getworkingHours();
+		
+	
   
 }    
+
+
   
    

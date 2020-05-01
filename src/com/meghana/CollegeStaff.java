@@ -19,7 +19,7 @@ public abstract class CollegeStaff {
 		 return Staff_Salary;
 	}
 	
-	public abstract int getworkingHours();
+	public abstract float getWorkingHours();
 		
 	
   

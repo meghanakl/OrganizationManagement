@@ -13,7 +13,7 @@ public class Teacher extends CollegeStaff {
 		 return Staff_Salary;
 	}
 	@Override
-	public int getworkingHours() {
+	public float getWorkingHours() {
 		// TODO Auto-generated method stub
 		return 7;
 	}

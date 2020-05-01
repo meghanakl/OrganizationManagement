@@ -50,7 +50,7 @@ public class Program {
 			System.out.println("StaffId " + C.Staff_id);
 			System.out.println("StaffName " + C.Staff_Name);
 			System.out.println("StaffSalary" + C.Staff_Salary);
-
+			 System.out.println("--------------------------");
 		} 
 
 		// ArrayList<Student> stdlist = new ArrayList<Student>();

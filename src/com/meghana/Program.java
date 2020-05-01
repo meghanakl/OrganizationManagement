@@ -8,27 +8,24 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
-    
-      
+
 		TimeDisplay d = new Student();
 		d.printTime();
 		Print p = new Student();
 		Student s = new Student();
-		
+
 		display(p);
-		
-		//p.print();
+
+		// p.print();
 		Teacher t = new Teacher();
 		CollegeStaff y = new Teacher();
 		Print r = new Teacher();
 		display(r);
-		
+
 		t.PrintTeacherAge();
 		y.IncrementSalary();
 		Helper e = new Helper();
 		e.IncrementSalary();
-		
-		
 
 		ArrayList<CollegeStaff> ClgStf = new ArrayList<CollegeStaff>();
 		CollegeStaff t1 = new Teacher();
@@ -78,6 +75,8 @@ public class Program {
 
 	public static void display(Print pr) {
 		pr.print();
+		
+		
 	}
 
 	// ArrayList<Student> stdlist = new ArrayList<Student>();
@@ -107,7 +106,7 @@ public class Program {
 	// st.readStudentId();
 	// st.readStudentName();
 
-	// stdlist.add(st);
+	// stdlist.add(st	);
 
 	// System.out.println("Available Courses are:");
 	// for (int j = 0; j < AvailableCourse.size(); j++) {

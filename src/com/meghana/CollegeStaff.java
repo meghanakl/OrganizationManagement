@@ -1,14 +1,24 @@
 package com.meghana;
 
+import java.util.Scanner;
+
 public class CollegeStaff {
+
+	int Staff_id;
+	String Staff_Name;
+	String Staff_Role;
+	int Staff_ExperienceInYear;
+	String Staff_Department;
+	String Staff_Address;
+	double Staff_Salary;
 	
-int	Staff_id;
-String Staff_Name;
-String Staff_Roll;
-int Staff_No_Of_Experience;
-String Staff_Department;
-String Staff_Adress;
+
+	public double IncrementSalary()
+	{
+		 Staff_Salary=(Staff_Salary)+(Staff_Salary)*(0.1);
+		 return Staff_Salary;
+	}
+  
+}    
   
 
-}
-  

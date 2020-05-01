@@ -1,8 +1,7 @@
 package com.meghana;
 
 public class Administration extends CollegeStaff{
-	int No_Of_Administraters;
-	String Administrater_Name;
+	int Administrater_work_timimgs;
 	Double Administrater_Salary; 
 
 }

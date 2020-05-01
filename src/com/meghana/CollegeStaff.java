@@ -2,7 +2,7 @@ package com.meghana;
 
 import java.util.Scanner;
 
-public abstract class CollegeStaff {
+public abstract class CollegeStaff implements Print {
 
 	int Staff_id;
 	String Staff_Name;

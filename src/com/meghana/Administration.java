@@ -7,6 +7,11 @@ public class Administration extends CollegeStaff{
 	public float getWorkingHours() {
 		// TODO Auto-generated method stub
 		return 8 ;
+	}
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		System.out.println("There is print method in Administration method");
 	} 
 
 }

@@ -4,7 +4,7 @@ package com.meghana;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Student {
+public class Student implements Print, TimeDisplay{
 	int Student_id;
 	String Student_name;
 
@@ -46,4 +46,16 @@ public class Student {
 
 	public ArrayList<Course> RegisteredCourses = new ArrayList<Course>();
 
-}
+	public void print(){
+		
+		System.out.println("This is student class");
+	}
+
+	@Override
+	public void printTime() {
+		// TODO Auto-generated method stub
+		System.out.println("this is student method");
+	}
+	}
+
+

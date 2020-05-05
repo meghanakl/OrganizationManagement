@@ -4,6 +4,13 @@ public class Teacher extends CollegeStaff implements TimeDisplay{
 	String Teaching_Subject;
 	int Teaching_hours;
 	
+   public Teacher(int id,String name,Double salary) {
+	 Staff_id =id;
+	 Staff_Name=name;
+	 Staff_Salary=salary;
+	   
+	 }
+	
 	{
 	super.IncrementSalary();
 	}

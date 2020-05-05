@@ -9,74 +9,28 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		TimeDisplay d = new Student();
-		d.printTime();
-		Print p = new Student();
-		Student s = new Student();
+		CollegeStaffList list = new CollegeStaffList();
 
-		display(p);
-
-		// p.print();
-		Teacher t = new Teacher();
-		CollegeStaff y = new Teacher();
-		Print r = new Teacher();
-		display(r);
-
-		t.PrintTeacherAge();
-		y.IncrementSalary();
-		Helper e = new Helper();
-		e.IncrementSalary();
-
-		ArrayList<CollegeStaff> ClgStf = new ArrayList<CollegeStaff>();
-		CollegeStaff t1 = new Teacher();
-		t1.Staff_id = 1;
-		t1.Staff_Name = "Megha";
-		t1.Staff_Salary = 1000;
-		ClgStf.add(t1);
-
-		CollegeStaff t2 = new Teacher();
-		t2.Staff_id = 3;
-		t2.Staff_Name = "Geetha";
-		t2.Staff_Salary = 9000;
-		ClgStf.add(t2);
-
-		CollegeStaff h1 = new Helper();
-		h1.Staff_id = 4;
-		h1.Staff_Name = "Raja";
-		h1.Staff_Salary = 8000;
-		ClgStf.add(h1);
-
-		CollegeStaff h2 = new Helper();
-		h2.Staff_id = 5;
-		h2.Staff_Name = "Baju";
-		h2.Staff_Salary = 7000;
-		ClgStf.add(h2);
-
-		CollegeStaff a1 = new Administration();
-		a1.Staff_id = 8;
-		a1.Staff_Name = "Faru";
-		a1.Staff_Salary = 2000;
-		ClgStf.add(a1);
-
-		CollegeStaff a2 = new Administration();
-		a2.Staff_id = 9;
-		a2.Staff_Name = "Hari";
-		a2.Staff_Salary = 5000;
-		ClgStf.add(a2);
-
-		for (CollegeStaff C : ClgStf) {
-			C.IncrementSalary();
-			System.out.println("StaffId " + C.Staff_id);
-			System.out.println("StaffName " + C.Staff_Name);
-			System.out.println("StaffSalary" + C.Staff_Salary);
-			System.out.println("--------------------------");
+		//ArrayList<CollegeStaff> ClgStf = new ArrayList<CollegeStaff>();
+		CollegeStaff bestStaff =list.getBestStaff();
+		System.out.println("StaffId " + bestStaff.Staff_id);
+		System.out.println("StaffName " + bestStaff.Staff_Name);
+		System.out.println("StaffSalary" + bestStaff.Staff_Salary);
+		bestStaff.IncrementSalary();
+		System.out.println("StaffSalary" + bestStaff.Staff_Salary);
+		
+		//for (CollegeStaff C : ClgStf) {
+		//	C.IncrementSalary();
+		//	System.out.println("StaffId " + bestStaff.Staff_id);
+			//System.out.println("StaffName " + bestStaff.Staff_Name);
+		//	System.out.println("StaffSalary" + bestStaff.Staff_Salary);
+		//	System.out.println("--------------------------");
 		}
-	}
+	
 
-	public static void display(Print pr) {
-		pr.print();
-		
-		
+	//public static void display(Print pr) {
+	//	pr.print();
+
 	}
 
 	// ArrayList<Student> stdlist = new ArrayList<Student>();
@@ -106,7 +60,7 @@ public class Program {
 	// st.readStudentId();
 	// st.readStudentName();
 
-	// stdlist.add(st	);
+	// stdlist.add(st );
 
 	// System.out.println("Available Courses are:");
 	// for (int j = 0; j < AvailableCourse.size(); j++) {
@@ -141,4 +95,4 @@ public class Program {
 	// Student.DisplayStudentsDetails(stdlist);
 	// }
 	// }
-}
+

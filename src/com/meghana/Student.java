@@ -19,7 +19,7 @@ public class Student implements Print, TimeDisplay{
 		System.out.println("Enter name of the student");
 		Student_name = s2.nextLine();
 	}
-
+   
 	public static int readCountOfStudent() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter number of  students");

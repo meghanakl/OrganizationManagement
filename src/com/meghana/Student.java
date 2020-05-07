@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student implements Print, TimeDisplay{
+	
+	public Student() {
+		 int count = 0 ;
+		   count= count+1;  
+		  
+		
+	   }
 	int Student_id;
 	String Student_name;
 

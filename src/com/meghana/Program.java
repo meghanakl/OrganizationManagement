@@ -1,5 +1,5 @@
 
-package com.meghana;
+package com.meghana;  
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,10 @@ public class Program {
 		System.out.println("StaffName " + bestStaff.Staff_Name);
 		System.out.println("StaffSalary" + bestStaff.Staff_Salary);
 		bestStaff.IncrementSalary();
-		System.out.println("StaffSalary" + bestStaff.Staff_Salary);
+		System.out.println("StaffSalary" + bestStaff.Staff_Salary); 
+		Teacher t = new Teacher(1,"bb", 500.0);
+		
+		
 		
 		//for (CollegeStaff C : ClgStf) {
 		//	C.IncrementSalary();
@@ -80,8 +83,8 @@ public class Program {
 
 	// for (int z = 0; z < CountOfCourse; z++)
 	// {
-	// Course cs = new Course();
-	// int courseId = cs.readCourseId();
+	// Course cs = new Course();  
+	// int courseId = cs.setId();
 
 	// for (Course c : availableCourse)
 	// {

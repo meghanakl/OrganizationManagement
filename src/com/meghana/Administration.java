@@ -1,6 +1,15 @@
 package com.meghana;
 
 public class Administration extends CollegeStaff{
+	
+	public Administration() {
+		 int count = 0 ;
+		   count= count+1;  
+		  
+		
+	   }
+	
+	
 	int Administrater_work_timimgs;
 	Double Administrater_Salary;
 	@Override

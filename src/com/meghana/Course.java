@@ -3,11 +3,16 @@ package com.meghana;
 import java.util.Scanner;
 
 public class Course {
-	
-int Course_id;
+	public Course() {
+		 int count = 0 ;
+		   count= count+1;  
+		  
+		
+	   }
+ int Course_id;
 String Course_name;
 
-public int readCourseId() {
+private  int readCourseId() {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter the Course_Id");
   return Course_id  = s.nextInt();
@@ -25,6 +30,11 @@ public static int GetRequiredCourseFromUser() {
 	int c = s.nextInt();
 	return c;
 }
+
+protected int  setId() {
+return this.readCourseId();  
 	
+}
+
 }
 

@@ -2,15 +2,17 @@ package com.meghana;
 
 public class Helper extends CollegeStaff
 {
+	
+	public Helper() {
+		 int count = 0 ;
+		   count= count+1;  
+		    }
+
+	
 	int No_Of_leaves;
 	double Helper_Salary;
-	 public Helper(int id,String name,Double salary) {
-		 Staff_id =id;
-		 Staff_Name=name;
-		 Staff_Salary=salary;
-		   
-		 }
-	 public  Helper() {};
+	
+	
 	@Override
 	public float getWorkingHours() {
 		// TODO Auto-generated method stub
@@ -23,5 +25,5 @@ public class Helper extends CollegeStaff
 		
 	}
 	
-}
+}  
  

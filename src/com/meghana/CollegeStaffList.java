@@ -27,13 +27,13 @@ public class CollegeStaffList {
 	h2.Staff_Salary = 7000;
 	StaffList.add(h2);
 
-	CollegeStaff a1 = new Administration();
+	CollegeStaff a1 = new Administration(6, "harr", 600.0);
 	a1.Staff_id = 8;
 	a1.Staff_Name = "Faru";
 	a1.Staff_Salary = 2000;
 	StaffList.add(a1);
 
-	CollegeStaff a2 = new Administration();
+	CollegeStaff a2 = new Administration(7, "taara", 900.0);
 	a2.Staff_id = 9;
 	a2.Staff_Name = "Hari";
 	a2.Staff_Salary = 5000;
@@ -46,6 +46,8 @@ public class CollegeStaffList {
 public CollegeStaff getBestStaff() {
 	return new Teacher(1,"navya",900.0);
 }
+
+
 	
 }
 

@@ -9,9 +9,7 @@ public class Student implements Print, TimeDisplay{
 	public Student() {
 		 int count = 0 ;
 		   count= count+1;  
-		  
-		
-	   }
+		    }
 	int Student_id;
 	String Student_name;
 
@@ -29,7 +27,7 @@ public class Student implements Print, TimeDisplay{
    
 	public static int readCountOfStudent() {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Enter number of  students");
+		System.out.println("Enter number of  students"); 
 		int noOfStudent = s.nextInt();
 		return noOfStudent;
 	}

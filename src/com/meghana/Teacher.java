@@ -10,7 +10,7 @@ public class Teacher extends CollegeStaff implements TimeDisplay{
 	   Staff_id =id;
 	 Staff_Name=name;
 	 Staff_Salary=salary;
-	
+	 
    }
 	  
 	{

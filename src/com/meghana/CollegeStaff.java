@@ -9,7 +9,7 @@ public abstract  class CollegeStaff implements Print {
 	String Staff_Role;
 	int Staff_ExperienceInYear;
 	String Staff_Department;
-	String Staff_Address;
+	String Staff_Address;                      
 	double Staff_Salary;
 	
 

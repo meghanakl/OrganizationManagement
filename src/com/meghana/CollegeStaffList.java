@@ -27,13 +27,13 @@ public class CollegeStaffList {
 	h2.Staff_Salary = 7000;
 	StaffList.add(h2);
 
-	CollegeStaff a1 = new Administration(6, "harr", 600.0);
+	CollegeStaff a1 = new Administration();
 	a1.Staff_id = 8;
 	a1.Staff_Name = "Faru";
 	a1.Staff_Salary = 2000;
 	StaffList.add(a1);
 
-	CollegeStaff a2 = new Administration(7, "taara", 900.0);
+	CollegeStaff a2 = new Administration();
 	a2.Staff_id = 9;
 	a2.Staff_Name = "Hari";
 	a2.Staff_Salary = 5000;
